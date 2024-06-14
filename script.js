@@ -1,6 +1,7 @@
 const form = document.getElementById("formulario");
 const nomes = [];
 const numero = [];
+const inputNumero = document.getElementById("telefone");
 
 let linhas = "";
 
@@ -13,7 +14,6 @@ form.addEventListener("submit", function (e) {
 
 function adicionarLinha() {
   const inputNome = document.getElementById("nome");
-  const inputNumero = document.getElementById("telefone");
   nomes.push(inputNome.value);
   numero.push(inputNumero.value);
 
@@ -26,7 +26,6 @@ function adicionarLinha() {
 
   inputNome.value = "";
   inputNumero.value = "";
-  console.log(linha);
 }
 
 function atualizaTabela() {
