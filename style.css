@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  background-color: #7578bf;
+}
+
+h1 {
+  font-family: "Orbitron";
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.container-main {
+  background: linear-gradient(300deg, #484a73 1%, #7578bf 43%, #d98c5f 87%);
+  border-radius: 40px;
+  box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  height: 450px;
+  width: 787px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  font-size: 20px;
+  font-family: "Fira Code";
+  padding: 16px 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#nome {
+  flex-grow: 1;
+}
+
+#telefone {
+  flex-grow: 2;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#adicionar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#adicionar::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  top: 50px;
+  left: 0px;
+  background-color: #d98c5f;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s;
+}
+
+#adicionar:hover::after {
+  transform: translate(0, 0) scale(1);
+}
+
+#adicionar img {
+  height: 48px;
+}
+
+table {
+  margin-top: 16px;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  border-spacing: 0px;
+}
+
+table thead {
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+table th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+table td {
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
